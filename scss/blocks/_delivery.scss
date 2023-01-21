@@ -1,0 +1,126 @@
+/*********** DELIVERY SECTION STYLES START ***********/
+.delivery-section {
+    padding-top: 140px;
+    padding-bottom: 164px;
+    background-image: url('../../images/delivery-bg-img1.png'), url('../../images/delivery-bg-img2.png');
+    background-repeat: no-repeat;
+    background-size: 147px 100px, 200px;
+    background-position: left top, right bottom;
+    background-color: $delivery-bg-color;
+    color: $delivery-text-color;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 48px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: $delivery-subtitle-color;
+    }
+
+    &__list {
+        @include list-unstyled;
+        text-align: center;
+    }
+
+    &__item {
+        padding-top: 36px;
+        background-image: url('../../images/“.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    &__item--desc {
+        margin: 0;
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    &__item--title {
+        margin: 0;
+        margin-bottom: 2px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $delivery-subtitle-color;
+    }
+
+    &__item--subtitle {
+        margin: 0;
+        margin-bottom: 16px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+/* TABLET RESPONSIVE START */
+@media only screen and (min-width: 768px) {
+    .delivery-section {
+        padding: 100px 78px 100px 77px;
+    }
+}
+
+/* TABLET RESPONSIVE END */
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width: 1080px) {
+    .delivery-section {
+        padding-top: 140px;
+        padding-bottom: 151px;
+        padding-left: 0;
+        padding-right: 0;
+
+        &__title {
+            width: 932px;
+            margin: 0 auto;
+            margin-bottom: 56px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 350px;
+        }
+
+        &__item:not(:last-child) {
+            margin: 0;
+        }
+
+        &__item--desc {
+            margin-bottom: 24px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        &__item--title {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &__item--subtitle {
+            margin-bottom: 32px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+/* DESKTOP RESPONSIVE END */
+
+/*********** DELIVERY SECTION STYLES END ***********/
